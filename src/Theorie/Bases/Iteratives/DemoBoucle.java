@@ -1,5 +1,7 @@
 package Theorie.Bases.Iteratives;
 
+import java.util.ArrayList;
+
 public class DemoBoucle {
     public static void main(String[] args) {
         int[] myArray = new int[] { 1, 2, 3, 4, 5 };
@@ -70,5 +72,23 @@ public class DemoBoucle {
             i++;
             System.out.println("");
         }
+
+        /*
+            Méthode forEach()
+         */
+
+        ArrayList<String> lastNames = new ArrayList<>();
+        lastNames.add("Quentin");
+        lastNames.add("Yvan");
+        lastNames.add("Amaury");
+
+        lastNames.forEach(lastName -> System.out.println(lastName));
+
+        for (String lastName : lastNames) {
+            System.out.println(lastName);
+        }
+
+
+
     }
 }
